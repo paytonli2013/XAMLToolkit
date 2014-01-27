@@ -90,6 +90,16 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XAMLToolkit.Resources\XAMLToolkit.Resources.csproj">
+      <Project>{a5a7d0bc-015e-454f-a642-51edb2ae503b}</Project>
+      <Name>XAMLToolkit.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XAMLToolkit.WPF\XAMLToolkit.WPF.csproj">
+      <Project>{97a3a41d-3c47-4bd9-a3b0-48f73f3a5b20}</Project>
+      <Name>XAMLToolkit.WPF</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

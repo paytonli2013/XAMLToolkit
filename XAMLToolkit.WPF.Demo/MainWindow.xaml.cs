@@ -19,9 +19,24 @@ namespace XAMLToolkit.WPF.Demo
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<string> Messages { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+
+            InitData();
+
+            DataContext = this;
+        }
+
+        private void InitData()
+        {
+            Messages = new List<string>();
+
+            Messages.Add("Toast1");
+            Messages.Add("Toast1");
+            Messages.Add("Toast1");
+            //throw new NotImplementedException();
         }
     }
 }
