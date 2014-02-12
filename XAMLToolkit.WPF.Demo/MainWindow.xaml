@@ -7,7 +7,7 @@
         <TabControl>
             <TabItem Header="ToastContainer">
                 <Grid>
-                    <toolkit:ToastContainer ItemsSource="{Binding Messages}"/>
+                    <toolkit:ToastContainer ItemsSource="{Binding Messages}" EnableAutoRemove="False"/>
                 </Grid>
             </TabItem>
         </TabControl>

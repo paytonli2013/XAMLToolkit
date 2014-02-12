@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using XAMLToolkit.Model;
 
 namespace XAMLToolkit.WPF.Demo
 {
@@ -19,7 +20,7 @@ namespace XAMLToolkit.WPF.Demo
     /// </summary>
     public partial class MainWindow : Window
     {
-        public List<string> Messages { get; set; }
+        public List<Toast> Messages { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -31,11 +32,11 @@ namespace XAMLToolkit.WPF.Demo
 
         private void InitData()
         {
-            Messages = new List<string>();
+            Messages = new List<Toast>();
 
-            Messages.Add("Toast1");
-            Messages.Add("Toast1");
-            Messages.Add("Toast1");
+            Messages.Add(new Toast("Toast1", "Title1"));
+            Messages.Add(new Toast("Toast1", "Title1Title1"));
+            Messages.Add(new Toast("Toast1", "Title1Title1Title1"));
             //throw new NotImplementedException();
         }
     }
