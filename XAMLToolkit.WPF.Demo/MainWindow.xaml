@@ -10,6 +10,17 @@
                     <toolkit:ToastContainer ItemsSource="{Binding Messages}" EnableAutoRemove="False"/>
                 </Grid>
             </TabItem>
+            <TabItem Header="Container">
+                <Grid>
+                    <!--<toolkit:Container Name="container1"/>-->
+                </Grid>
+            </TabItem>
+            <TabItem Header="Themed UserControl">
+                <Grid>
+                    <!--<toolkit:UserControlForTheme/>-->
+                    <toolkit:Container Name="container2"/>
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

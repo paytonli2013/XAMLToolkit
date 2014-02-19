@@ -35,9 +35,16 @@ namespace XAMLToolkit.WPF.Demo
             Messages = new List<Toast>();
 
             Messages.Add(new Toast("Toast1", "Title1"));
-            Messages.Add(new Toast("Toast1", "Title1Title1"));
-            Messages.Add(new Toast("Toast1", "Title1Title1Title1"));
+            //Messages.Add(new Toast("Toast1", "Title1Title1"));
+            //Messages.Add(new Toast("Toast1", "Title1Title1Title1"));
             //throw new NotImplementedException();
+            //container1.MessageBox.Show("Toast1", "Title1", MessageType.Toast);
+
+            container2.ShowChildWindow(new ChildView(), new ChildWindowOption { Payload = "View Payload"}, (o) =>
+            {
+                var content = o == null ? null : o.ToString();
+                container2.MessageBox.Show(content, "Child View Closed", MessageType.Toast);
+            });
         }
     }
 }
